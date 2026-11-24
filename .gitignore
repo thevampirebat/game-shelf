@@ -1,0 +1,6 @@
+node_modules/
+web-ext-artifacts/
+artifacts/
+*.xpi
+*.zip
+*Backup*.json

@@ -1,0 +1,26 @@
+[
+  {
+    "@id": "/products/blades-of-fire-day-one-edition-xbox-series-x#product",
+    "@type": "Product",
+    "offers": {
+      "@type": "Offer",
+      "availability": "http://schema.org/InStock",
+      "price": "59.99",
+      "priceCurrency": "EUR",
+      "url": "https://www.shop-justforgames.eu/products/blades-of-fire-day-one-edition-xbox-series-x?variant=51225424757069"
+    },
+    "url": "https://www.shop-justforgames.eu/products/blades-of-fire-day-one-edition-xbox-series-x"
+  },
+  {
+    "@type": "Product",
+    "@id": "/products/blades-of-fire-day-one-edition-xbox-series-x#product",
+    "url": "https://www.shop-justforgames.com/products/blades-of-fire-day-one-edition-xbox-series-x",
+    "offers": {
+      "@type": "Offer",
+      "url": "/products/blades-of-fire-day-one-edition-xbox-series-x?variant=51225424757069",
+      "availability": "https://schema.org/InStock",
+      "price": 59.99,
+      "priceCurrency": "EUR"
+    }
+  }
+]

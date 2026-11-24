@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Privacy · Game Shelf – Price Watch</title><link rel="stylesheet" href="style.css"><main class="dashboard"><h1>Privacy</h1><div class="notice"># Privacy notice — Game Shelf – Price Watch
+Version 1.0.21 · 24 November 2026
+
+Your watchlist, product URLs, selected price elements, price history, stock watch settings and history, store settings, delivery costs, alert preferences and optional scan summaries are stored in Firefox&#x27;s local extension storage. The extension has no account system, analytics, advertising SDK, developer-operated server or remote executable code.
+
+## Connections needed for the features
+Price and stock checks open the product URLs you saved in temporary browser tabs. Those requests go to the selected stores, which receive the URL and normal browser connection information such as your IP address and applicable cookies. Store pages can load their own third-party resources under the browser&#x27;s normal settings. The extension does not send your whole watchlist to an extension developer or a comparison service. Website content is read locally to find the product price and availability.
+
+Automatic currency conversion requests daily reference rates from api.frankfurter.dev, sending your chosen base-currency code and normal network connection information. The extension omits credentials and the referrer from this request. It does not send product URLs, prices or your watchlist to the rate service. Switch Currency settings to Manual rates only to stop extension-initiated rate updates.
+
+Firefox&#x27;s installation disclosure includes browsing activity and website content because store checks revisit your saved URLs and use ordinary store-page requests. These declarations do not mean the extension runs an analytics service.
+
+## Controls
+You grant website access as stores are added or refreshed. You can remove that access in Firefox&#x27;s add-on permissions. Set both schedules to Manual checks only to stop scheduled store visits, pause individual products, or use Stop during a scan. Turn off Watch stock on a listing to exclude it from stock scans. Explicit manual checks still visit stores. Back-in-stock and price alerts can be disabled. Private-window operation is disabled.
+
+## Backups and deletion
+Backups are JSON files saved to your computer, only when you export or enable backups. They may contain product names, URLs, prices and preferences. Protect these files accordingly. There is no built-in Google Drive login or upload. If you separately sync a backup folder using a desktop cloud client, that client and its provider handle the upload.
+
+Delete products or stores from the grid to remove their tracked data. Recent-change entries may remain until the retained history rolls over; remove all extension data by removing the extension through Firefox and deleting any exported backups. A fresh empty backup import can replace the watchlist and retained events. The extension retains up to 200 price-history points per listing and 500 recent-change events, plus the latest alert summary.
+
+Normal store and rate-provider requests are governed by those services&#x27; policies. No promise is made that visiting a store is anonymous.
+
+## Optional support
+The popup and settings contain an optional link to https://ko-fi.com/gameshelfdev. Ko-fi is opened in a new tab only when you click this link. The extension does not load Ko-fi scripts, embed a payment form, or send your watchlist or price history to Ko-fi. Visiting the page and making a payment are subject to Ko-fi and the selected payment provider&#x27;s privacy policies. Existing features do not require payment.
+</div></main></html>

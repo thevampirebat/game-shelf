@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Game Shelf – Price Watch</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="popup.css"></head><body class="popup">
+<header class="popupTop"><span class="mark">▥</span><div><h1>Game Shelf <small>Price Watch</small></h1><p>Games and everything else you’re watching.</p></div><button id="showStore" type="button">＋ Add store</button></header>
+<main class="popupContent">
+<section id="trackPanel">
+<div id="reading" class="priceResult" aria-live="polite"><span id="priceStatus">Reading this page…</span><strong id="priceAmount">—</strong><span id="priceTitle"></span><small id="priceDetail"></small><button id="addStoreHere" class="primary" type="button" hidden>＋ Add this store</button></div>
+<form id="addForm">
+<div class="fieldHeading"><label for="game">Add listing to</label><label class="sortLabel">Sort<select id="productSort" aria-label="Sort product list"><option value="az">Name A–Z</option><option value="za">Name Z–A</option><option value="recent">Recently added</option></select></label></div>
+<select id="game" aria-label="Add listing to"><option value="">＋ New product</option></select>
+<div id="newFields"><label>Product name<input id="name" maxlength="200" placeholder="e.g. Fable, a book or a jacket" required></label><div class="twoFields"><label>Category<select id="category"></select></label><label>Edition / size / details<input id="platform" maxlength="80" placeholder="e.g. Xbox / paperback / size M"></label></div></div>
+<label>Delivery cost (<span id="deliveryCurrency">store currency</span>)<input id="deliveryCost" type="number" min="0" max="1000000" step="0.01" placeholder="Blank = unknown · 0 = free"></label>
+<label class="toggle"><input id="stockWatch" type="checkbox">Watch stock</label><button id="add" class="primary" type="submit" disabled>Track this product</button>
+</form>
+<button id="amazonAuto" type="button" hidden>Use automatic Amazon Buy New price</button>
+<button id="pick" type="button" disabled>Choose a different price on the page</button>
+</section>
+<section id="storePanel" hidden><div class="panelHeading"><h2>Add this store</h2><button id="cancelStore" type="button">Back</button></div><form id="quickStoreForm">
+<label>Store name<input id="storeName" required maxlength="60"></label><label>Website<input id="storeUrl" type="url" required></label><div class="twoFields"><label>Region<input id="storeRegion" maxlength="60" placeholder="Optional"></label><label>Currency<select id="storeCurrency"></select></label></div><label>Region URL path<input id="storePath" placeholder="Optional, e.g. /de-de"></label><p class="small">Use the currency shown by this store. Firefox will ask for website access.</p><button class="primary" type="submit">Add store and read price</button></form></section>
+</main>
+<footer class="popupFooter"><div id="message" role="status"></div><div class="popupFooterLinks"><a class="supportLink" href="https://ko-fi.com/gameshelfdev" target="_blank" rel="noopener noreferrer" title="Optional support on Ko-fi; opens in a new tab">Support Game Shelf ↗</a><button id="help" type="button">How to use</button></div><button id="open" type="button">Open price grid ↗</button></footer>
+<script src="core.js"></script><script src="popup.js"></script></body></html>

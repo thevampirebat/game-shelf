@@ -1,0 +1,34 @@
+{
+  "@type": "Product",
+  "url": "https://euroshop.boox.com/products/noteair6c",
+  "offers": [
+    {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "579.99",
+      "availability": "http://schema.org/InStock",
+      "url": "https://euroshop.boox.com/products/noteair6c?variant=53826690351467"
+    },
+    {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "656.99",
+      "availability": "http://schema.org/InStock",
+      "url": "https://euroshop.boox.com/products/noteair6c?variant=53826690384235"
+    },
+    {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "579.99",
+      "availability": "http://schema.org/InStock",
+      "url": "https://euroshop.boox.com/products/noteair6c?variant=53826690482539"
+    },
+    {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "656.99",
+      "availability": "http://schema.org/InStock",
+      "url": "https://euroshop.boox.com/products/noteair6c?variant=53826690515307"
+    }
+  ]
+}

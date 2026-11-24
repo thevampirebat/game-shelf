@@ -1,0 +1,25 @@
+/*
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at https://mozilla.org/MPL/2.0/.
+*/
+/* Dashboard-only layout. Deliberately separate from the fixed-width toolbar popup. */
+html{width:100%;max-width:none;margin:0;padding:0}
+body.shelfPage{display:block;width:100%;max-width:none;min-width:0;margin:0;padding:0}
+body.shelfPage>main.dashboard{display:block;width:100%;max-width:none;min-width:0;margin:0;padding:20px 12px}
+.dashboard>.collection,.dashboard>.summary,.dashboard>.runProgress,.dashboard>.history{width:100%;max-width:none;min-width:0}
+.dashboard>.top{flex-wrap:wrap;gap:16px}.dashboard .sectionHead{flex-wrap:wrap;padding:18px 14px}
+.dashboard .tableWrap{display:block;width:100%;max-width:100%;min-width:0;overflow-x:auto}
+.layoutVersion{display:inline-block;font-size:11px;color:var(--muted);font-weight:400;letter-spacing:0;margin-left:10px;white-space:nowrap}
+.dashboard .summary{grid-template-columns:repeat(2,minmax(0,1fr)) minmax(0,1.5fr) minmax(0,1.4fr)}
+.stockSettings{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.stockSettings .eyebrow{margin-bottom:4px}
+.stockSettings button{margin-top:6px}
+.listingEditor .toggle{margin:0 0 10px}
+@media(max-width:1050px){.dashboard .summary{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Keep support beside Help even when the toolbar wraps. */
+.helpSupportActions{display:inline-flex;align-items:center;gap:8px;flex-shrink:0}.top .actions .kofiButton{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;border:1px solid #ff827f;border-radius:8px;background:#a52c35;color:#fff;font:inherit;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap}.top .actions .kofiButton:hover{background:#be3440}.top .actions .kofiButton:focus-visible{outline:3px solid var(--text);outline-offset:3px}.kofiButton svg{flex:none}
+
+.history .eventDateLabel{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.history .eventDateLabel input{width:auto;margin:0}

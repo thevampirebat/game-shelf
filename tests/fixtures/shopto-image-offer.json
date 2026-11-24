@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Onimusha Way of the Sword - Xbox Series X",
+  "sku": "XBXON03",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.shopto.net/en/xbxon03-onimusha-way-of-the-sword-xbox-series-x-p1203524/eur/fr/",
+    "itemCondition": "https://schema.org/NewCondition",
+    "price": "59.78",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/OutOfStock"
+  }
+}
